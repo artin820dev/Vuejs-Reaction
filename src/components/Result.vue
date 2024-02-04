@@ -13,11 +13,11 @@ export default {
   },
   mounted() {
     if (this.score < 250) {
-      this.rank = "ninja fingers";
+      this.rank = "G fingers";
     } else if (this.score < 400) {
       this.rank = "rapid reflexes";
     } else {
-      this.rank = "snall pace";
+      this.rank = "try harder";
     }
   },
 };

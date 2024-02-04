@@ -1,5 +1,5 @@
 <template>
-  <h1>Ninja Reaction Timer</h1>
+  <h1>Reaction Test Timer</h1>
   <button @click="start" v-bind:disabled="isPlaying">play</button>
   <Block v-if="isPlaying" v-bind:delay="delay" @end="endGame" />
   <!-- <p v-if="showResults">Reaction time: {{ score }}</p> -->
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     start() {
-      this.delay = 2000 + Math.random() * 5000;
+      this.delay = Math.random() * 1500;
       this.isPlaying = true;
       this.showResults = false;
     },
